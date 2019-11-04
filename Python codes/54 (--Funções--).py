@@ -24,7 +24,7 @@ def validaPeso(sel, alt, ida):
         f = (62.1 * alt) / ida
         return f
 
-sexo = str(input("Digite o seu sexo: [M/F]: "))
+sexo = str(input("Digite o seu sexo: [M/F]: ")).lower().strip()[0]
 altura = float(input("Digite sua altura: "))
 idade = int(input("Digite sua idade: "))
 
