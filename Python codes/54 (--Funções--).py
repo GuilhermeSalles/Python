@@ -18,10 +18,10 @@ def ValidaIdade(idad):
 
 def validaPeso(sel, alt, ida):
     if sel == "m":
-        m = (72.7 * alt) / ida
+        m = (72.7 * alt) - ida
         return m
     elif sel == "f":
-        f = (62.1 * alt) / ida
+        f = (62.1 * alt) - ida
         return f
 
 sexo = str(input("Digite o seu sexo: [M/F]: ")).lower().strip()[0]
