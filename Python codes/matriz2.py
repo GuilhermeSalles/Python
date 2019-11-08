@@ -1,8 +1,9 @@
 def trocar(valores,pos1,pos2):
     if 0 <= pos1 < len(valores) and 0 <= pos2 < len(valores):
-        temp = valores[pos1]
-        valores[pos1] = valores[pos2]
-        valores[pos2] = temp
+        for i in range(0,3):
+            temp = valores[pos1]
+            valores[pos1] = valores[pos2]
+            valores[pos2] = temp
     return valores
 
 matriz = [[0,0,0],
